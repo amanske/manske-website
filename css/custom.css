@@ -6,12 +6,61 @@ h3 {
 	font-weight: 300;
 	font-size: 50px;
 	font-family: 'Lato', serif;
-	color: #F4F1BB;
+	color: #E6EBE0;
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.header {
+	position: absolute;
+	background-color: inherit;
+	right: 0;
+	top: 0;
+	left: 0;
+	height: 15%;
+	min-height: 70px;
+	max-height: 100px;
+}
+.header .headerLeft{
+	/*border-style: solid;*/
+	height: 100%;
+	position: absolute;
+}
+.header .navigationColumn {
+	position: absolute;
+	padding: 0;
+	height: 100%;
+	right: 0;
+
+}
+.header .btn {
+	padding: 20% 0;
+	min-height: 80px;
+	max-height: 100px;
+	background-color: inherit;
+	border-style: none;
+	border-radius: 0;
+}
+.header button:hover{
+	background-color: #DEEAE1;
+}
+
+.header .btn p{
+	margin: 0;
+	font-size: 20px;
+	color: #291F1E;
+}
+
+/*.header .navigationColumn button {
+	display: block;
+}
+.header .navigationColumn .menuButtonDiv{	
+	height: 100%;
+	position: relative;
+	padding: 0;
+}*/
+
 .footer {
 	position: absolute;
 	right: 0;
@@ -33,10 +82,10 @@ h3 {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    background-color: none;
     color: #E6EBE0;
 }
 
 .footer .row {
 	width:100%;
 }
+
