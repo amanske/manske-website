@@ -1,5 +1,6 @@
 body {
 	background-color: #9BC1BC;
+	font-family: 'Lato', serif;
 }
 h3 {
 	font-weight: 300;
@@ -10,4 +11,32 @@ h3 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-color: #5CA4A9;
+	text-align: center;
+}
+.footer p {
+	color: #E6EBE0;
+	margin: 0;
+}
+
+.footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: none;
+    color: #E6EBE0;
+}
+
+.footer .row {
+	width:100%;
 }
