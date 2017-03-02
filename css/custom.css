@@ -1,0 +1,13 @@
+body {
+	background-color: #9BC1BC;
+}
+h3 {
+	font-weight: 300;
+	font-size: 50px;
+	font-family: 'Lato', serif;
+	color: #F4F1BB;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
