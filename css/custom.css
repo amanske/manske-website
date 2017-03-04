@@ -9,52 +9,89 @@ body {
 
 }
 
-#mainScreen{
-	padding-top: 5%;
+/*screen-xs*/
+@media (max-width: 768px) { 
+	#mainScreen{
+		padding-top: 2%;
+	}
+	.footer .fa{
+    	padding-left: 18px;
+    	padding-right: 18px;
+    	font-size: 17px;
+	}
+	.footer {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+	.footer p{
+		padding-top: 0.5rem;
+		font-size: 12px;
+	}
+}
+/*screen-sm*/
+@media (min-width: 768px) and (max-width: 992px) { 
+	#mainScreen{
+		padding-top: 2%;
+	}
+	#mainScreen .row h3{
+		padding-top: 12%
+	}
+	#mainScreen .row img{
+		margin-top: 10%
+	}
+	.footer .fa {
+    	padding: 20px;
+    	font-size: 30px;
+	}
+	.footer {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+/*screen-md*/
+@media (min-width: 992px) and (max-width: 1200px) { 
+	#mainScreen{
+		padding-top: 5%;
+	}
+	#mainScreen .row h3{
+		padding-top: 12%
+	}
+	#mainScreen .row img{
+		margin-top: 10%
+	}
+	.footer .fa {
+    	padding: 20px;
+    	font-size: 30px;
+	}
+	.footer {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+/*screen-lg corresponds with col-lg*/
+@media (min-width: 1200px) {  
+  #mainScreen{
+		padding-top: 5%;
+	}
+	#mainScreen .row h3{
+		padding-top: 12%
+	}
+	#mainScreen .row img{
+		margin-top: 10%
+	}
+	.footer .fa {
+    	padding: 20px;
+    	font-size: 30px;
+	}
+	.footer {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
 }
 
-#mainScreen .row h3{
-	font-weight: 300;
-	font-size: 6vh;
-	font-family: 'Lato', serif;
-	color: #E6EBE0;
-	padding-top: 12%;
-	text-align: center;
-	animation-name: fadein;
-	animation-duration: 3s;
-}
-#mainScreen .row p{
-	font-weight: 300;
-	font-style: italic;
-	font-size: 2vh;
-	font-family: 'Lato', serif;
-	color: #E6EBE0;
-	text-align: center;
-	animation-name: fadein;
-	animation-duration: 3s;
-}
-
-#mainScreen .row img{
-	border-radius: 50%;
-	height: 30vh;
-	width: 30vh;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #E6EBE0;
-	margin-top: 10%;
-	animation-name: fadein;
-	animation-duration: 3s;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-
-}
-
-#mainScreen .col-xs{
-}
 .header {
 	position: absolute;
-	background-color: inherit;
+	background-color: #9BC1BC;
 	right: 0;
 	top: 0;
 	left: 0;
@@ -91,13 +128,51 @@ body {
 	color: #291F1E;
 }
 
+
+#mainScreen{
+}
+
+#mainScreen .row h3{
+	font-weight: 300;
+	font-size: 6vh;
+	font-family: 'Lato', serif;
+	color: #E6EBE0;
+	text-align: center;
+	animation-name: fadein;
+	animation-duration: 3s;
+}
+#mainScreen .row p{
+	font-weight: 300;
+	font-style: italic;
+	font-size: 2vh;
+	font-family: 'Lato', serif;
+	color: #E6EBE0;
+	text-align: center;
+	animation-name: fadein;
+	animation-duration: 3s;
+}
+
+#mainScreen .row img{
+	border-radius: 50%;
+	height: 30vh;
+	width: 30vh;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #E6EBE0;
+	animation-name: fadein;
+	animation-duration: 3s;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+
+
 .footer {
 	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
 	background-color: #5CA4A9;
 	text-align: center;
 }
@@ -107,11 +182,8 @@ body {
 }
 
 .footer .fa {
-    padding: 20px;
-    font-size: 30px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
     color: #E6EBE0;
 }
 
