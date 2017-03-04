@@ -8,17 +8,49 @@ body {
 	to {opacity: 1;}
 
 }
-h3 {
+
+#mainScreen{
+	padding-top: 5%;
+}
+
+#mainScreen .row h3{
 	font-weight: 300;
 	font-size: 6vh;
 	font-family: 'Lato', serif;
 	color: #E6EBE0;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	padding-top: 12%;
+	text-align: center;
 	animation-name: fadein;
-	animation-duration: 2s;
+	animation-duration: 3s;
+}
+#mainScreen .row p{
+	font-weight: 300;
+	font-style: italic;
+	font-size: 2vh;
+	font-family: 'Lato', serif;
+	color: #E6EBE0;
+	text-align: center;
+	animation-name: fadein;
+	animation-duration: 3s;
+}
+
+#mainScreen .row img{
+	border-radius: 50%;
+	height: 30vh;
+	width: 30vh;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #E6EBE0;
+	margin-top: 10%;
+	animation-name: fadein;
+	animation-duration: 3s;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+
+#mainScreen .col-xs{
 }
 .header {
 	position: absolute;
@@ -31,17 +63,16 @@ h3 {
 	max-height: 100px;
 }
 .header .headerLeft{
-	/*border-style: solid;*/
 	height: 100%;
 	position: absolute;
 }
 .header .navigationColumn {
-	position: absolute;
+	position: fixed;
 	padding: 0;
-	height: 100%;
 	right: 0;
 
 }
+
 .header .btn {
 	padding: 20% 0;
 	min-height: 80px;
@@ -59,15 +90,6 @@ h3 {
 	font-size: 2vh;
 	color: #291F1E;
 }
-
-/*.header .navigationColumn button {
-	display: block;
-}
-.header .navigationColumn .menuButtonDiv{	
-	height: 100%;
-	position: relative;
-	padding: 0;
-}*/
 
 .footer {
 	position: fixed;
