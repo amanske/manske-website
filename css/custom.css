@@ -15,6 +15,11 @@ body {
 		padding-top: 2%;
 		margin-top: 5px;
 	}
+	.dotNav li {
+		margin: 5px;
+		width: 10px;
+		height: 10px;
+	}
 	.footer .fa{
     	padding-left: 18px;
     	padding-right: 18px;
@@ -40,6 +45,11 @@ body {
 	#mainScreen .row img{
 		margin-top: 10%
 	}
+	.dotNav li {
+		margin: 6px;
+		width: 12px;
+		height: 12px;
+	}
 	.footer .fa {
     	padding: 20px;
     	font-size: 30px;
@@ -60,6 +70,11 @@ body {
 	#mainScreen .row img{
 		margin-top: 10%
 	}
+	.dotNav li {
+		margin: 7px;
+		width: 14px;
+		height: 14px;
+	}
 	.footer .fa {
     	padding: 20px;
     	font-size: 30px;
@@ -79,6 +94,11 @@ body {
 	}
 	#mainScreen .row img{
 		margin-top: 10%
+	}
+	.dotNav li {
+		margin: 8px;
+		width: 16px;
+		height: 16px;
 	}
 	.footer .fa {
     	padding: 20px;
@@ -171,6 +191,58 @@ body {
 }
 
 
+.dotNavigation{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 1.5vw;
+	animation-name: fadein;
+	animation-duration: 3s;
+}
+
+.dotNav ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  	justify-content: center;
+
+}
+
+.dotNav li {
+ 	float: left; 
+	position: relative;
+	display: block;
+}
+
+.dotNav li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: rgba(230, 235, 224, 0.3);
+	position: absolute;
+}
+
+.dotNav li a {
+
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dotNav li a:hover,
+.dotNav li a:focus {
+	background-color: #E6EBE0;
+}
+
+.dotNav li.current a {
+	background-color: #E6EBE0;
+	transform: scale(1.5);
+}
+
+
 .footer {
 	position: fixed;
 	right: 0;
@@ -194,4 +266,7 @@ body {
 	width:100%;
 	margin-left: 0;
 }
+
+
+
 

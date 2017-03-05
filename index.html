@@ -54,8 +54,8 @@
 
 		<div class="container" id="mainScreen">
 			<div class="row">
-				<div class="col-md-4 col-sm-5 sol-xs-12">
-					<img src="images/placeholder.png">
+				<div class="col-md-4 col-sm-5 col-xs-12">
+					<img src="images/me.png">
 				</div>
 				<div class="col-md-8 col-sm-7 col-xs-12">
 					<h3>Alexander Manske</h3>
@@ -64,6 +64,24 @@
 			</div>
 		</div>
 
+
+
+
+
+		<div class="container-fluid dotNavigation">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 sol-xs-12">
+					<div class="dotNav">
+						<ul>
+							<li class="current"><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="footer">
 			<div class="row">
 				<a target="_blank" href="https://www.facebook.com/alexandermanske" class="fa fa-facebook"></a>
@@ -83,5 +101,14 @@
 
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="js/mainScreen.js"></script>
+		<script src="js/dots.js"></script>
+		<script>
+			[].slice.call( document.querySelectorAll( '.dotNav > ul' ) ).forEach( function( nav ) {
+				new DotNav( nav, {
+					callback : function( idx ) {
+					}
+				} );
+			} );
+		</script>
 	</body>
 </html>
