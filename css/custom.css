@@ -1,3 +1,8 @@
+html, body{
+	height: 100%;
+    margin: 0;
+    overflow-x:hidden;
+}
 body {
 	background-color: #9BC1BC;
 	font-family: 'Lato', serif;
@@ -11,7 +16,7 @@ body {
 
 /*screen-xs*/
 @media (max-width: 768px) { 
-	#mainScreen{
+	.mainScreen{
 		padding-top: 2%;
 		margin-top: 5px;
 	}
@@ -36,13 +41,13 @@ body {
 }
 /*screen-sm*/
 @media (min-width: 768px) and (max-width: 992px) { 
-	#mainScreen{
+	.mainScreen{
 		padding-top: 2%;
 	}
-	#mainScreen .row h3{
+	.mainScreen .row h3{
 		padding-top: 12%
 	}
-	#mainScreen .row img{
+	.mainScreen .row img{
 		margin-top: 10%
 	}
 	.dotNav li {
@@ -61,13 +66,13 @@ body {
 }
 /*screen-md*/
 @media (min-width: 992px) and (max-width: 1200px) { 
-	#mainScreen{
+	.mainScreen{
 		padding-top: 5%;
 	}
-	#mainScreen .row h3{
+	.mainScreen .row h3{
 		padding-top: 12%
 	}
-	#mainScreen .row img{
+	.mainScreen .row img{
 		margin-top: 10%
 	}
 	.dotNav li {
@@ -86,13 +91,13 @@ body {
 }
 /*screen-lg corresponds with col-lg*/
 @media (min-width: 1200px) {  
-  #mainScreen{
+  	.mainScreen{
 		padding-top: 5%;
 	}
-	#mainScreen .row h3{
+	.mainScreen .row h3{
 		padding-top: 12%
 	}
-	#mainScreen .row img{
+	.mainScreen .row img{
 		margin-top: 10%
 	}
 	.dotNav li {
@@ -152,10 +157,17 @@ body {
 }
 
 
-#mainScreen{
+.wrapper{
+	width: 400%;
+}
+.page {
+    width: 25%;
+    float:left;
+    min-height: 100%;
 }
 
-#mainScreen .row h3{
+
+#homeScreen .row h3{
 	font-weight: 300;
 	font-size: 6vh;
 	font-family: 'Lato', serif;
@@ -164,7 +176,7 @@ body {
 	animation-name: fadein;
 	animation-duration: 3s;
 }
-#mainScreen .row p{
+#homeScreen .row p{
 	font-weight: 300;
 	font-style: italic;
 	font-size: 2vh;
@@ -175,7 +187,7 @@ body {
 	animation-duration: 3s;
 }
 
-#mainScreen .row img{
+#homeScreen .row img{
 	border-radius: 50%;
 	height: 30vh;
 	width: 30vh;

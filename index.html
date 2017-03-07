@@ -26,6 +26,7 @@
 
 	</head>
 	<body>
+		<!-- HEADER START -->
 		<div class="header container-fluid">
 			<div class="row">
 				<div class="col-md-8 headerLeft">
@@ -35,16 +36,16 @@
 
 					<div class="btn-group btn-group-justified" role="group" aria-label="Button Group">
 						<div class="btn-group" role="group">
-							<button type="button" class="btn btn-default"><p>HOME</p></button>
+							<button type="button" class="btn btn-default" onclick="buttonToDot('homeDot')"><p>HOME</p></button>
 						</div>
 						<div class="btn-group" role="group">
-							<button type="button" class="btn btn-default"><p>ABOUT</p></button>
+							<button type="button" class="btn btn-default" onclick="buttonToDot('aboutDot')"><p>ABOUT</p></button>
 						</div>
 						<div class="btn-group" role="group">
-							<button type="button" class="btn btn-default"><p>RESUME</p></button>
+							<button type="button" class="btn btn-default" onclick="buttonToDot('resumeDot')"><p>RESUME</p></button>
 						</div>
 						<div class="btn-group" role="group">
-							<button type="button" class="btn btn-default"><p>CONNECT</p></button>
+							<button type="button" class="btn btn-default" onclick="buttonToDot('connectDot')"><p>CONNECT</p></button>
 						</div>
 					</div>
 				</div>
@@ -52,31 +53,55 @@
 
 		</div>
 
-		<div class="container" id="mainScreen">
-			<div class="row">
-				<div class="col-md-4 col-sm-5 col-xs-12">
-					<img src="images/me.png">
-				</div>
-				<div class="col-md-8 col-sm-7 col-xs-12">
-					<h3>Alexander Manske</h3>
-					<p>Computer Science student at Royal Institute of Technology</p>
+		<!-- /HEADER -->
+
+		<div class="wrapper">
+
+			<div class="page" id="homepage">
+				<div class="container mainScreen" id="homeScreen">
+					<div class="row">
+						<div class="col-md-4 col-sm-5 col-xs-12">
+							<img src="images/me.png">
+						</div>
+						<div class="col-md-8 col-sm-7 col-xs-12">
+							<h3>Alexander Manske</h3>
+							<p>Computer Science student at Royal Institute of Technology</p>
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<div class="page" id="aboutpage">
+				<div class="container mainScreen" id="aboutScreen">
+					ABOUT
+				</div>
+			</div>
+			<div class="page" id="resumepage">
+				<div class="container mainScreen" id="resumeScreen">
+					RESUME
+				</div>
+			</div>
+			<div class="page" id="connectpage">
+				<div class="container mainScreen" id="connectScreen">
+					CONNECT
+				</div>
+			</div>
+
 		</div>
 
 
 
 
-
+		<!-- FOOTER START -->
 		<div class="container-fluid dotNavigation">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 sol-xs-12">
 					<div class="dotNav">
 						<ul>
-							<li class="current"><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
+							<li class="current"><a href="#" id="homeDot"></a></li>
+							<li><a href="#" id="aboutDot"></a></li>
+							<li><a href="#" id="resumeDot"></a></li>
+							<li><a href="#" id="connectDot"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -98,6 +123,8 @@
 				Alexander Manske</p>
 			</div>
 		</div>
+
+		<!-- /FOOTER -->
 
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="js/mainScreen.js"></script>
