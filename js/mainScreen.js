@@ -16,11 +16,6 @@ $(document).ready(function () {
 	    $('.wrapper').animate({marginLeft: '-200%'},1000);
 
 	});
-	$('#connectDot').click(function () {
-	    $('.wrapper').animate({marginLeft: '-300%'},1000);
-
-	});
-
 });
 $(window).resize(function () {
 	setCorrectHeaderHeight();
